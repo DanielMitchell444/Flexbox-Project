@@ -66,8 +66,7 @@
  }
 
  .container2{
- background: -webkit-linear-gradient(360deg,#224e4d 10%,#083023 360%); 
- background: linear-gradient(360deg,#224e4d 10%,#083023 360%);  
+    background-image: linear-gradient(#051b33 25%,#02050a 75%);
  height: 130vh;
 
 }
@@ -133,6 +132,7 @@ background-image: linear-gradient(315deg, #000000 0%, #a29bfe 74%);
 
  .card{
   border: 1px solid black;
+  background-image:linear-gradient(rgb(31, 46, 56), rgb(9, 15, 26));
   height: 200px;
   width: 400px;
   margin-top: 40px;
@@ -160,7 +160,7 @@ background-image: linear-gradient(315deg, #000000 0%, #a29bfe 74%);
  }
 
  .contact{
-    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+   background-image:linear-gradient(black, rgb(5, 10, 15));;
     height: 100vh;
 }
 
