@@ -14,6 +14,7 @@
     color: white;
   }
   
+  /*CSS FOR NAVBAR */
  .nav{
   background-color: rgba(0, 0, 0, 0);
   position: relative;
@@ -40,12 +41,8 @@
   margin-top: 20px;
  }
 
- h1{
-  color: white;
- }
-
- .heading h1{
- color: white
+ .main-nav{
+  display: none;
  }
 
  li{
@@ -54,16 +51,57 @@
   font-size: 26px;
  }
 
+ .divclass{
+  background-image: url('elvis-bekmanis-g9qwoPiS0nY-unsplash.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  }
+ 
+/*CSS FOR HEADER */
+ h1{
+  color: white;
+ }
+
+
+ .div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+ }
+
+ .heading h1{
+ color: white
+ }
+
+ .div h1{
+  font-size: 40px;
+  font-family: Great Vibes;
+ }
+
+
  img{
   max-width: 100%;
   height: auto;
   position: absolute;
  }
 
+ button{
+  margin-top: 20px;
+  width: 150px;
+  font-family: Great Vibe;
+  height: 30px;
+  color: white;
+  background-color: #000000;
+ background-image: linear-gradient(315deg, #000000 0%, #a29bfe 74%);
+ 
+  }
 
- .main-nav{
-  display: none;
- }
+
+ /*css for about us */
+
 
  .container2{
     background-image: linear-gradient(#051b33 25%,#02050a 75%);
@@ -95,36 +133,7 @@ h2{
   margin-right: auto;
  }
 
- .div h1{
-  font-size: 40px;
-  font-family: Great Vibes;
- }
 
- .divclass{
- background-image: url('elvis-bekmanis-g9qwoPiS0nY-unsplash.jpg');
- background-size: cover;
- height: 100vh;
- background-repeat: no-repeat;
- }
-
- button{
- margin-top: 20px;
- width: 150px;
- font-family: Great Vibe;
- height: 30px;
- color: white;
- background-color: #000000;
-background-image: linear-gradient(315deg, #000000 0%, #a29bfe 74%);
-
- }
-
- .div{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 70vh;
- }
 
  h2{
     
@@ -133,10 +142,12 @@ background-image: linear-gradient(315deg, #000000 0%, #a29bfe 74%);
  .card{
   border: 1px solid black;
   background-image:linear-gradient(rgb(31, 46, 56), rgb(9, 15, 26));
-  height: 200px;
+  height: 180px;
   width: 400px;
   margin-top: 40px;
  }
+
+ 
 
  .card p{
    text-align: center; 
@@ -152,16 +163,15 @@ background-image: linear-gradient(315deg, #000000 0%, #a29bfe 74%);
      flex-direction: column;
 
  }
-
- .header h1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
- }
+ 
+ /*CSS FOR CONTACT SECTION */
 
  .contact{
    background-image:linear-gradient(black, rgb(5, 10, 15));;
     height: 100vh;
+}
+
+.contact h2{
 }
 
 .contact p{
@@ -170,6 +180,8 @@ background-image: linear-gradient(315deg, #000000 0%, #a29bfe 74%);
   font-size: 28px;
   font-family: Great Vibes;
 }
+
+/*Media Queries */
 
 @media(min-width: 320px){
   .card p{
@@ -260,7 +272,7 @@ background-image: linear-gradient(315deg, #000000 0%, #a29bfe 74%);
     }
   
     .card p{
-     line-height: 2.5;
+     line-height: 2;
     }
    }
 
@@ -289,11 +301,19 @@ background-image: linear-gradient(315deg, #000000 0%, #a29bfe 74%);
 
  @media(min-width: 1200px){
     .card{
-      width: 400px;
+      width: 350px;
     }
 
     .card p{
       font-size: 24px;
-      line-height: 3;
+      line-height: 2.5;
+    }
+
+    .contact{
+     height: 100vh;
+    }
+
+    .contact p{
+      line-height: 2.5;
     }
  }
